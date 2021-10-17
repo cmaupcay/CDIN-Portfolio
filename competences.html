@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <title>Clément Mauperon | Compétences</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="description" content="Mes compétences.">
+    <meta name="keywords" content="Portfolio, Clément, Mauperon, Compétences">
+    <meta name="author" content="Clément Mauperon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico">
+
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <!-- Local -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/styleh.css"
+        media="screen and (max-width: 1200px)" />
+</head>
+
+<body>
+
+    <div id="page">
+        <div id="menu" class="bloc">
+            <nav>
+                <ul id="menu-gauche" class="entreeDouce">
+                    <li onclick="window.location.href = 'competences.html'">
+                        Compétences
+                    </li>
+
+                    <li onclick="window.location.href = 'experiences.html'">
+                        Expériences
+                    </li>
+                </ul>
+
+                <!-- Titre -->
+                <div id="groupe-titre" onclick="window.location.href = 'accueil.html'" class="entreePop">
+                    <!-- Logo -->
+                    <span id="titre">Clément</span>
+                    <i id="logo" class="fas fa-cube"></i>
+                    <!-- Texte -->
+                    <span id="titre">MAUPERON</span>
+                </div>
+
+                <ul id="menu-droite" class="entreeDouce">
+                    <li onclick="window.location.href = 'loisirs.html'">
+                        Loisirs
+                    </li>
+
+                    <li onclick="window.location.href = 'me-trouver.html'">
+                        Me trouver
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="contenu" class="bloc entreeGlissementHaut">
+            <article id="web">
+                <h3>Web</h3>
+                <div id="HTML" class="bloc competence" onclick="montrerDetails('detailsHTML');">
+                    <i class="fab fa-html5 entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 80%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsHTML" class="details">
+                        <h5>HTML5</h5>
+                        Réalisation de plusieurs sites web à titre personnel.
+                    </div>
+                </div>
+                <div id="CSS" class="bloc competence" onclick="montrerDetails('detailsCSS');">
+                    <i class="fab fa-css3-alt entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 50%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsCSS" class="details">
+                        <h5>CSS3</h5>
+                        Maîtrise de la librairie <b>Booststrap 4</b> et des animations.
+                    </div>
+                </div>
+                <div id="JavaScript" class="bloc competence" onclick="montrerDetails('detailsJavaScript');">
+                    <i class="fab fa-js-square entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 15%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="15"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsJavaScript" class="details">
+                        <h5>JavaScript</h5>
+                        Apprentissage en cours via la plateforme <b>OpenClassrooms</b>. Maîtrise des bases : variables, structures, fonctions...<br>
+                        Notions en <b>jQuery</b>.
+                    </div>
+                </div>
+                <div id="PHP" class="bloc competence" onclick="montrerDetails('detailsPHP');">
+                    <i class="fab fa-php entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 60%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsPHP" class="details">
+                        <h5>PHP</h5>
+                        Bonne maîtrise du langage, réalisation de plusieurs projets personnels.<br>
+                        Apprentissage de l'usage des fonctions cryptographiques en cours.
+                    </div>
+                </div>
+                <div id="SQL" class="bloc competence" onclick="montrerDetails('detailsSQL');">
+                    <i class="fas fa-database entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 45%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="45"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsSQL" class="details">
+                        <h5>SQL</h5>
+                        Usage à travers <b>PHP</b> et <b>phpMyAdmin</b>.<br>
+                        Apprentissage avancé en cours.
+                    </div>
+                </div>
+            </article>
+
+            <article id="programmation">
+                <h3>Programmation</h3>
+                <div id="CPP" class="bloc competence" onclick="montrerDetails('detailsCPP');">
+                    <i class="fas fa-copyright entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 30%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsCPP" class="details">
+                        <h5>C / C++</h5>
+                        Apprentissage en cours à l'université.<br>
+                        Connaissance de la librairie graphique <b>SFML</b>.
+                    </div>
+                </div>
+                <div id="Python" class="bloc competence" onclick="montrerDetails('detailsPython');">
+                    <i class="fab fa-python entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 50%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsPython" class="details">
+                        <h5>Python</h5>
+                        Formation <u>Apprenez à programmer en Python</u> sur <b>OpenClassrooms</b>.
+                    </div>
+                </div>
+                <div id="ReactNative" class="bloc competence" onclick="montrerDetails('detailsReactNative');">
+                    <i class="fab fa-react entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 10%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="10"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsReactNative" class="details">
+                        <h5>React Native</h5>
+                        Apprentissage en cours.
+                    </div>
+                </div>
+            </article>
+
+            <article id="os">
+                <h3>Systèmes</h3>
+                <div id="Windows" class="bloc competence" onclick="montrerDetails('detailsWindows');">
+                    <i class="fab fa-windows entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 80%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>80%</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="detailsWindows" class="details">
+                        <h5>Windows</h5>
+                        Bonne maîtrise du système.
+                        Utilisation courante de <b>Windows 10 Pro</b>.<br>
+                        Maîtrise du <b>Batch</b> et apprentissage de <b>Powershell</b> en cours.
+                    </div>
+                </div>
+                <div id="Linux" class="bloc competence" onclick="montrerDetails('detailsLinux');">
+                    <i class="fab fa-linux entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 40%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsLinux" class="details">
+                        <h5>Linux</h5>
+                        Suivi de plusieurs formation sur la plateforme <b>OpenClassrooms</b>.<br>
+                        Utilisation courante de <b>Ubuntu Server 20.04 LTS</b> et <b>Kali Linux</b>.
+                    </div>
+                </div>
+                <div id="macOS" class="bloc competence" onclick="montrerDetails('detailsmacOS');">
+                    <i class="fab fa-apple entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 5%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="5"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>5%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsmacOS" class="details">
+                        <h5>macOS</h5>
+                        Connaissances limitées sur ces systèmes...
+                    </div>
+                </div>
+            </article>
+
+            <article id="graphisme">
+                <h3>Graphisme</h3>
+                <div id="GFX" class="bloc competence" onclick="montrerDetails('detailsGFX');">
+                    <i class="fas fa-images entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 80%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsGFX" class="details">
+                        <h5>Edition d'image</h5>
+                        Assez bonne maîtrise de <b>Adobe Photoshop</b>.<br>
+                        Réalisations graphiques pour des particuliers sur Internet entre 2014 et 2016.
+                    </div>
+                </div>
+                <div id="Montage" class="bloc competence" onclick="montrerDetails('detailsMontage');">
+                    <i class="fas fa-film entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 40%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="40"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsMontage" class="details">
+                        <h5>Montage vidéo</h5>
+                        Maîtrise de <b>Adobe Premiere Pro</b>.<br>
+                        Apprentissage plus poussé en cours.
+                    </div>
+                </div>
+                <div id="VFX" class="bloc competence" onclick="montrerDetails('detailsVFX');">
+                    <i class="fab fa-buffer entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 55%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="55"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsVFX" class="details">
+                        <h5>Effets spéciaux</h5>
+                        Assez bonne maîtrise de <b>Adobe After Effects</b>.<br>
+                        Réalisation de vidéo en <b>motion design</b> pour des particuliers sur Internet entre 2014 et 2016.
+                    </div>
+                </div>
+            </article>
+
+            <article id="autres">
+                <h3>Autres</h3>
+                <div id="Musique" class="bloc competence" onclick="montrerDetails('detailsMusique');">
+                    <i class="fas fa-music entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 92%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="92"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsMusique" class="details">
+                        <h5>Production musicale</h5>
+                        Bonne maîtrise du logiciel de MAO <b>FL Studio</b>.
+                    </div>
+                </div>
+                <div id="Reseau" class="bloc competence" onclick="montrerDetails('detailsReseau');">
+                    <i class="fas fa-sitemap entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 30%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsReseau" class="details">
+                        <h5>Réseau</h5>
+                        Formation <u>Sécurisez vos infrastructures</u> sur <b>OpenClassrooms</b>.<br>
+                        Formation <u>Découvrez l'univers de la cybersécurité</u> sur <b>OpenClassrooms</b>.
+                    </div>
+                </div>
+                <div id="Methodes" class="bloc competence" onclick="montrerDetails('detailsMethodes');">
+                    <i class="fas fa-user-tie entreePop"></i>
+                    <div class="progress entreeDouce">
+                        <div class="progress-container" style="width: 15%;">
+                            <div class="progress-bar remplissage" role="progressbar" aria-valuenow="15"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <span>15%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="detailsMethodes" class="details">
+                        <h5>Méthodes de travail</h5>
+                        Formation <u>Découvrez la méthodologie DevOps</u> sur <b>OpenClassrooms</b>.
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div id="pied" class="bloc entreePop">
+            <span>2020 - <a href="mailto:clement.mauperon@etu.u-paris.fr">Contact</a></span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script type="text/javascript">
+        // Affichage des détails des compétences
+        function montrerDetails(id){
+            var ele = document.getElementById(id);
+            if(ele.classList.contains("ouvert")){
+                ele.classList.remove("ouvert");
+            } else {
+                ele.classList.add("ouvert");
+            }
+            if(ele.classList.contains("entreeDouce")){
+                ele.classList.remove("entreeDouce");
+            } else {
+                ele.classList.add("entreeDouce");
+            }
+        }
+    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2e35018433.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

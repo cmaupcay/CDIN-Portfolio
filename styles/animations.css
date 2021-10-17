@@ -1,0 +1,66 @@
+.entreeDouce
+{
+    animation-duration: 1s;
+    animation-name: entreeDouce;
+}
+
+@keyframes entreeDouce
+{
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.entreePop
+{
+    animation-duration: 0.7s;
+    animation-name: entreePop, entreeDouce;
+}
+
+@keyframes entreePop
+{
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(100%);
+    }
+}
+
+.entreeGlissementHaut
+{
+    animation-duration: 0.8s;
+    animation-name: entreeGlissementHaut, entreeDouce;
+}
+
+@keyframes entreeGlissementHaut
+{
+    from {
+        margin-top: 4rem;
+    }
+
+    to {
+        margin-top: initial;
+    }
+}
+
+.remplissage
+{
+    animation-duration: 0.7s;
+    animation-name: remplissage;
+}
+
+@keyframes remplissage
+{
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

@@ -1,0 +1,359 @@
+@import url('animations.css');
+
+/* STRUCTURE */
+*
+{
+    margin: auto;
+    padding: 0;
+    font-size: medium;
+    font-family: 'Ubuntu';
+    user-select: none;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+html { overflow-y: visible; }
+
+h1, h2, h3, h4, h5 { font-weight: bolder; }
+
+body
+{
+    background-color: #e4e3e3;
+    color: #204051;
+}
+
+/* Sous-ligner */
+u { text-decoration: underline; }
+
+/* Liens */
+a 
+{
+    color: #204051;
+    transition: all 0.2s ease-out;
+}
+a:hover
+{
+    color: #84a9ac;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in;
+}
+
+/* Boutons */
+button
+{
+    padding: 0.4rem;
+    width: 90%;
+    background-color: #e4e3e3;
+    border-radius: 0.2rem;
+    color: #204051;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: none;
+    transition: all 0.2s ease-out;
+}
+button:hover
+{
+    background-color: #84a9ac;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in;
+}
+
+/* Bloc */
+.bloc
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Catégories (avec icone) */
+.categorie
+{
+    color: #e4e3e3;
+    transition: all 0.2s ease-out;
+}
+.categorie:hover
+{
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+}
+.categorie i
+{
+    font-size: 3.3rem;
+    width: 100%;
+}
+.categorie div#sous-titre
+{
+    display: block;
+    margin-top: 1rem;
+}
+.categorie h4
+{
+    font-size: x-large;
+    margin-bottom: 0!important;
+}
+.categorie span
+{
+    font-size: small;
+}
+.categorie div#sous-titre span
+{
+    margin-top: 0;
+}
+
+/* Liens */
+.liens
+{
+    padding-top: 0.5rem;
+}
+.liens *
+{
+    color: #204051!important;
+}
+.liens div.categorie
+{
+    cursor: pointer;
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+/* Menu */
+div#menu
+{
+    height: 6rem;
+    padding-top: 0.5rem;
+}
+
+div#menu nav
+{
+    display: flex;
+}
+
+div#menu ul
+{
+    list-style: none;
+    margin-top: auto;
+}
+div#menu ul li 
+{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 0.3rem;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+div#menu ul li:hover
+{
+    font-size: 1rem;
+    color: #84a9ac;
+    transition: all 0.2s ease-in;
+}
+div#menu ul li:active
+{
+    font-size: 0.6rem;
+    transition: all 0.2s ease-in;
+}
+
+div#menu ul#menu-gauche { text-align: right; }
+
+div#menu div#groupe-titre
+{
+    cursor: pointer;
+    display: inline-flex;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    transition: all 0.2s ease-out;
+}
+div#menu div#groupe-titre:hover
+{
+    transform: scale(1.05);
+    color: #84a9ac;
+    transition: all 0.2s ease-in;
+}
+div#menu div#groupe-titre:active
+{
+    transform: scale(0.95);
+    transition: all 0.2s ease-in;
+}
+
+div#menu div#groupe-titre span#titre
+{
+    font-weight: bolder;
+    margin-top: auto;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+div#menu div#groupe-titre i#logo
+{
+    margin: 0.5rem;
+    font-size: 3rem;
+}
+
+/* Contenu principal */
+div#contenu
+{
+    overflow-y: visible;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+}
+
+div#contenu section
+{
+    width: 100%;
+}
+
+/* Articles */
+div#contenu article
+{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    width: 80%;
+}
+div#contenu article h1, div#contenu article h2, div#contenu article h3, div#contenu article h4
+{
+    margin-bottom: 1rem;
+}
+
+/* Formulaire */
+article form
+{
+    width: 80%;
+}
+article form input, article form textarea
+{
+    color: #204051!important;
+    margin-bottom: 0.7rem;
+    resize: none;
+}
+
+/* Annonces */
+div#contenu article.annonce
+{
+    border-radius: 0.3rem;
+    background-color: #204051;
+    color: #84a9ac;
+    transition: all 0.2s ease-out;
+}
+div#contenu article.annonce:hover
+{
+    width: 100%;
+    transition: all 0.2s ease-in;
+}
+div#contenu article.annonce h1, div#contenu article.annonce h2, div#contenu article.annonce h3, div#contenu article.annonce h4
+{
+    color: #e4e3e3;
+    margin-bottom: 0;
+}
+div#contenu article.annonce span
+{
+    color: #e4e3e3;
+    font-size: small;
+    font-style: italic;
+}
+div#contenu article.annonce p
+{
+    margin: 1.3rem 0.3rem 0.3rem;
+    padding-bottom: 0.5rem;
+}
+
+div#contenu article.annonce .menu-annonce
+{
+    opacity: 0%;
+    transition: all 0.2s ease-out;
+}
+div#contenu article.annonce:hover .menu-annonce
+{
+    opacity: initial;
+    transition: all 0.2s ease-in;
+}
+div#contenu article.annonce .sous-menu-annonce
+{
+    padding: 0.2rem;
+    flex: 0 0 25%;
+    width: 25%;
+}
+
+/* Compétences */
+div.competence
+{
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+div.competence:hover
+{
+    cursor: pointer;
+}
+div.competence div.details
+{
+    display: none;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    text-align: left;
+    background-color: #84a9ac;
+    border-radius: 0.3rem;
+}
+div.competence div.details.ouvert
+{
+    display: block;
+}
+div.competence i
+{
+    font-size: 2rem;
+    transition: all 0.2s ease-in;
+}
+div.competence:hover i
+{
+    width: 10%;
+    font-size: 2.3rem;
+    transition: all 0.2s ease-in;
+}
+div.competence:hover div.progress
+{
+    height: 2rem;
+    transition: all 0.2s ease-in;
+}
+div.progress
+{
+    width: 90%;
+    height: 1.7rem;
+    margin: 0;
+    background-color: #84a9ac;
+    transition: all 0.2s ease-in;
+}
+div.progress span
+{
+    position:absolute;
+    right:0;
+    left:0;
+}
+div.progress div.progress-container
+{
+    margin: 0;
+    height: inherit;
+}
+div.progress div.progress-bar
+{
+    margin: 0;
+    width: 100%;
+    height: inherit;
+    border-radius: 0.2rem;
+    background-color: #204051;
+    color: #e4e3e3;
+}
+
+/* Pied de page */
+div#pied
+{
+    height: 3rem;
+    font-weight: bolder;
+}
